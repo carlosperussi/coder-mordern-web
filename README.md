@@ -11,7 +11,10 @@ Caso você tenha caído aqui de paraquedas, saiba que meu foco de atuação hoje
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@carlos.m.perussi/)
 [![Substack](https://img.shields.io/badge/Substack-%23006f5c.svg?style=for-the-badge&logo=substack&logoColor=FF6719)](https://substack.com/@carlosperussi)
 
-## Habilidades
+## Linguagens abordadas
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 ### Gestão de projetos
 - [Product Management](https://gerarcertificado.com.br/validar.php?cert=a7ddbe2883b7e7057c77a516f8f6bccc)
 - Scrum SFPC
