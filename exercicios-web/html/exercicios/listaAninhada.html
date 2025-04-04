@@ -1,0 +1,53 @@
+<h1>Listas Aninhadas</h1>
+<h2>Projeto</h2>
+
+<ul class="tree">
+    <li>
+        <span wm-folder>Backend</span>
+        <ul>
+            <li>
+                <span wm-folder>app</span>
+                <ul id="app-content">
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li wm-list="config">
+                <span wm-folder>config</span>
+                <ul id="config-content">
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidor.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span wm-folder>frontend</span>
+        <ul>
+            <li wm-list="public">
+                <span wm-folder>public</span>
+                <ul id="public-content">
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<style>
+    .hiddenComponent {display: none;}
+    span {cursor: pointer;}
+</style>
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            let listFolders = folder.nextElementSibling
+            listFolders.classList.toggle('hiddenComponent')
+        }
+    })
+</script>
