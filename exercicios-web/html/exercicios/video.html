@@ -1,0 +1,37 @@
+<h1>Vídeo</h1>
+<video id="meuVideo" height="450" width="800" controls autoplay controlslist="nodownload">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+    Seu browser não suporta a tag de vídeo
+</video>
+
+<div wm-progresso="meuVideo" class="progresso">
+    <div></div>
+</div>
+
+<div>
+    <button wm-play="meuVideo">Play</button>
+    <button wm-pause="meuVideo">Pause</button>
+</div>
+
+<style>
+    .progresso {border: #444 solid 1px; height: 20px; margin: 20px; width: 500px;}
+    .progresso > div {background: #F00; color: #FFF;font-size: 14px; height: 100%; text-align: right; width: 0%;}
+</style>
+
+<script>
+    function configurarVideo(id) {
+        let video = document.getElementById('meuVideo')
+        video.oncontextmenu = () => false
+
+        document.querySelector(`[wm-play=${id}]`).onclick = e => video.play()
+        document.querySelector(`[wm-pause=${id}]`).onclick = e => video.pause()
+
+        setInterval(() => {
+            const percentual = (video.currentTime / video.duration) * 100
+            const valorDiv = document.querySelector(`[wm-progresso=${id}] > div`)
+            valorDiv.style.width = `${percentual}%`
+            valorDiv.innerHTML = `${percentual.toFixed(1)}%`
+        }, 500)
+    }
+    configurarVideo('meuVideo')
+</script>
