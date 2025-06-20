@@ -19,6 +19,7 @@ Caso você tenha caído aqui de paraquedas, saiba que meu foco de atuação hoje
 
 ### Gestão de projetos
 - [Product Management](https://gerarcertificado.com.br/validar.php?cert=a7ddbe2883b7e7057c77a516f8f6bccc)
+- AI Powered Product Management
 - Scrum SFPC
 - Team Management
 - Mobile Apps
